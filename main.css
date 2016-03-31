@@ -1,0 +1,254 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  margin: 40px 30px;
+}
+
+.shirt_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  border: 5px solid #5CA4D7;
+  border-bottom: none;
+}
+
+.shirt_container i {
+  display: flex;
+  justify-content: space-around;
+  color: #5CA4D7;
+  font-size: 220%;
+  border: 5px solid #5CA4D7;
+  border-top: none;
+  border-right: none;
+  padding: 2px;
+  height: 35px;
+  width: 35px;
+}
+
+.shirt_container img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.shirt_choices {
+  display: flex;
+  height: 60px;
+  border: 5px solid #5CA4D7;
+  border-right: none;
+  border-bottom: none;
+}
+
+.shirt_choices div {
+  display: inline-block;
+  width: 20%;
+  border: 5px solid #5CA4D7;
+  border-left: none;
+  border-top: none;
+  position: relative;
+}
+
+.shirt_choices a {
+  display: inline-block;
+  border-left: none;
+  border-top: none;
+  position: relative;
+}
+
+.shirt_choices h1 {
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Lato', sans-serif;
+  color: #5CA4D7;
+  font-size: 140%;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  margin: 0 auto;
+  cursor: default;
+}
+
+.shirt_choices i {
+  color: #5CA4D7;
+  font-size: 175%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.pink_square i {
+  color: #D280A9;
+  font-size: 175%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.yellow_square i {
+  color: #D9B081;
+  font-size: 175%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  padding-top: 20px;
+  color: #5CA4D7;
+  font-size: 30px;
+  margin: 0 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    flex-direction: row;
+    }
+}
+
+.shirt_choices i:hover {
+  background-color: #5CA4D7;
+  color: #FFFFFF;
+}
+
+.shirt_choices h1:hover {
+  background-color: #5CA4D7;
+  color: #FFFFFF;
+}
+
+.shirt_container i:hover {
+  background-color: #5CA4D7;
+  color: #FFFFFF;
+}
+
+.blue_square i:hover {
+  background-color: #5CA4D7;
+  color: #5CA4D7;
+}
+
+.pink_square i:hover {
+  background-color: #5CA4D7;
+  color: #D280A9;
+}
+
+.yellow_square i:hover {
+  background-color: #5CA4D7;
+  color: #D9B081;
+}
+
+a.tooltips {
+  position: relative;
+  display: inline;
+  text-decoration: none;
+}
+
+a.tooltips_swatch {
+  position: relative;
+  display: inline;
+  text-decoration: none;
+  cursor: default;
+}
+
+a.tooltips span {
+  background: #5CA4D7;
+  position: absolute;
+  height: 225px;
+  width: 100px;
+  color: #FFFFFF;
+  border: 2px solid #5CA4D7;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 2px;
+  left: -12px;
+  bottom: 18px;
+}
+
+a.tooltips span:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  border-top: 12px solid #FFFFFF;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  height: 0; width: 0;
+}
+
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  border-top: 12px solid #FFFFFF;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  height: 0; width: 0;
+}
+
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.9;
+  bottom: 18px;
+  left: 50%;
+  margin-left: -12px;
+  z-index: 999;
+}
+
+a.tooltips_swatch span {
+  background: #5CA4D7;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  color: #FFFFFF;
+  border: 2px solid #5CA4D7;
+  border-radius: 2px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+}
+
+a:hover.tooltips_swatch span {
+  visibility: visible;
+  opacity: 0.9;
+  bottom: 18px;
+  left: 50%;
+  margin-left: -12px;
+  z-index: 99;
+}
+
+a.tooltips_swatch span:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  border-top: 12px solid #FFFFFF;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  height: 0; width: 0;
+}
+
+a.tooltips_swatch span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  border-top: 12px solid #FFFFFF;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  height: 0; width: 0;
+}
